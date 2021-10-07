@@ -5,7 +5,7 @@ before_install:
   - docker build -t learndocker -f Dockerfile.dev .
 
 script:
-  - docker run learndocker
+  - docker run -e CI=true learndocker npm run test
 
 deploy:
   provider: elasticbeanstalk
