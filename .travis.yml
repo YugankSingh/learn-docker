@@ -13,9 +13,9 @@ deploy:
   secret_access_key:
     secure: "$SECRET_ACCESS_KEY"
   region: "us-east-2"
-  app: "learn-docker"
-  env: "Learndocker-env"
+  app: "hello-docker"
+  env: "Hellodocker-env"
   bucket_name: "elasticbeanstalk-us-east-2-675572134462"
-  bucket_path: "learn-docker-bucket"
+  bucket_path: "hello-docker"
   on:
     branch: master
